@@ -12,3 +12,13 @@ function createNavBar() {
     theUl.appendChild(list);
   });
 }
+/**Create a back to top button */
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 150) {
+    toTop.classList.add("btn_active");
+  } else {
+    toTop.classList.remove("btn_active");
+  }
+});
