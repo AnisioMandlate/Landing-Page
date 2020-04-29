@@ -52,8 +52,25 @@ a {
   color: #fff;
 }
 
-/* General Styles */
+.navbar__menu.scroll {
+  background: #363636;
+}
 
+.navbar__menu.scroll a {
+  color: black;
+}
+
+.navbar__menu.scroll li.active {
+  color: #fff;
+  border-bottom: 2px solid rgb(189, 179, 179);
+}
+
+.navbar__menu a.active {
+  color: #fff;
+  border-bottom: 3px solid rgb(189, 179, 179);
+}
+
+/* General Styles */
 h2 {
   font-size: 3.5em;
   color: #898989;
@@ -73,7 +90,7 @@ p {
 }
 
 .section {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -188,7 +205,7 @@ i {
 .page__footer {
   border-top: 1px solid gray;
   background: transparent;
-  padding: 1em;
+  padding: 0.7em;
   color: #fff;
   text-align: center;
 }

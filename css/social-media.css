@@ -1,22 +1,43 @@
-.fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+.fab {
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.4em;
 }
 
 .fa-twitter {
-    color: white;
+  color: white;
+  transition: ease 0.5s all;
 }
 
 .fa-github {
-    color: white;
+  color: white;
+  transition: ease 0.5s all;
 }
 
 .fa-facebook {
-    color: white;
+  color: white;
+  transition: ease 0.5s all;
 }
 
 .fa-linkedin {
-    color: white;
+  color: white;
+  transition: ease 0.5s all;
+}
+
+.fa-twitter:hover {
+  color: black;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-facebook:hover {
+  color: black;
+}
+
+.fa-linkedin:hover {
+  color: black;
 }

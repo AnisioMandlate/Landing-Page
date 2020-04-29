@@ -12,6 +12,33 @@ function createNavBar() {
     theUl.appendChild(list);
   });
 }
+/**Change navigation style on scroll*/
+window.addEventListener("scroll", (event) => {
+  let nav = document.querySelector(".navbar__menu");
+
+  window.scrollY >= 44
+    ? nav.classList.add("scroll")
+    : nav.classList.remove("scroll");
+});
+
+/**Active Navigation on scroll */
+window.addEventListener("scroll", (event) => {
+  let links = document.querySelectorAll("nav ul li a");
+  let fromTop = window.scrollY;
+
+  links.forEach((lnk) => {
+    let section = document.querySelector(lnk.hash);
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      lnk.classList.add("active");
+    } else {
+      lnk.classList.remove("active");
+    }
+  });
+});
+
 /**Create a back to top button */
 const toTop = document.querySelector(".to-top");
 
