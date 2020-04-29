@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+@import "social-media.css";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  margin: 0;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+/* Navbar Styles */
+.navbar__menu {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #333;
+  border-bottom: 1px solid #363636;
+}
+
+.navbar__menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar__menu li {
+  padding: 15px;
+  transition: ease 1s all;
+  border-radius: 50px;
+}
+
+.navbar__menu li:hover {
+  background: rgb(189, 179, 179);
+  color: #fff;
+}
+
+/* General Styles */
+
+h2 {
+  font-size: 3.5em;
+  color: #898989;
+}
+
+span {
+  color: rgb(224, 222, 222);
+}
+
+#section1 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+}
+
+.section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#section2 {
+  min-height: 90vh;
+}
+
+.about_text {
+  text-indent: 84px;
+}
+/* Projects Styles */
+.projects.text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects__items {
+  width: 80vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid black;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects__item img {
+  width: 100%;
+}
+
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: mediumseagreen;
+  opacity: 0;
+  transition: ease 0.5s all;
+}
+
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+
+.projects__item.projects_btn {
+  opacity: 1;
+}
+
+.projects__item.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.projects_btn {
+  opacity: 0;
+  color: #898989;
+}
+
+.projects_btn:hover {
+  color: black;
+}
+
+/* Footer Styles */
+.page__footer {
+  border-top: 1px solid gray;
+  background: transparent;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+.page__footer p {
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 99, 99);
+}

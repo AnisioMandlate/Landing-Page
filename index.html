@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <section id="section1" data-nav="Home" class="section active">
+        <div class="landing__container">
+          <h2>Hello, <span>I'm a Front-End</span> Developer</h2>
+          <p id="name">
+            My name is <b>Anisio</b>. A developer based in Mozambique
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="About" class="section">
+        <div class="landing__container">
+          <h2>About</h2>
+          <h2 class="about__text"><span id="about_page_text">Me</span></h2>
+        </div>
+        <div>
+          <h3>
+            I enjoy software development because it allows me to transcribe
+            design to code.
+          </h3>
+          <p>
+            I'm currently doing my B.Sc (Computer Science) at the University
+            Saint Thomas of Mozambique,
+          </p>
+          <p>
+            I chose Front-End specificaly because it allows to create and
+            actually see the result of what I'm building.
+          </p>
+        </div>
+      </section>
 
+      <section id="section3" data-nav="Projects" class="section">
+        <div class="landing__container">
+          <h2>Projects</h2>
+          <div class="projects__items">
+            <div class="projects__item">
+              <img src="./images/carlos-muza-hpjSkU2UYSU.jpg" alt="" />
+              <div class="projects__btns">
+                <a href="#" class="projects_btn">
+                  <i class="fas fa-eye"></i>Preview
+                </a>
+                <a href="#" class="projects_btn">
+                  <i class="fab fa-github"></i>Github
+                </a>
+              </div>
+            </div>
+            <div class="projects__item">
+              <img src="./images/ilya-pavlov-OqtafYT5kTw.jpg" alt="" />
+              <div class="projects__btns">
+                <a href="#" class="projects_btn">
+                  <i class="fas fa-eye">Preview</i>
+                </a>
+                <a href="#" class="projects_btn">
+                  <i class="fab fa-github">Github</i>
+                </a>
+              </div>
+            </div>
+            <div class="projects__item">
+              <img src="./images/le-buzz-9H0ZA1oPsYE.jpg" alt="" />
+              <div class="projects__btns">
+                <a href="#" class="projects_btn">
+                  <i class="fas fa-eye">Preview</i>
+                </a>
+                <a href="#" class="projects_btn">
+                  <i class="fab fa-github">Github</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="section4" data-nav="Contact" class="section">
+        <div class="landing__container">
+          <h2>Contact</h2>
+          <div class="contact__list">
+            <div class="contact__email">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <div class="text-secondary">anisiomandlate@gmail.com</div>
+            </div>
+            <div class="contact__addres">
+              <i class="fas fa-marker-alt"></i>
+              <h3>Address</h3>
+              <div class="text-secondary">
+                Ahmed Sekou Toure Avenue, House nr. 428, Fomento, Matola,
+                Mozambique
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="page__footer">
+        <p>© Copyright 2020. All Rights Reserved</p>
+      </footer>
+    </main>
     <script src="./js/app.js"></script>
-</body>
+    <script>
+      createNavBar();
+    </script>
+  </body>
 </html>
