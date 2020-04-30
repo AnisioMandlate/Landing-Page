@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a54d2cbf95.js"
+      `SameSite="None`"
+    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Landing Page</title>
   </head>
   <body>
     <header class="page__header">
-      <!-- <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div> -->
       <nav class="navbar__menu">
         <ul id="navbar__list"></ul>
       </nav>
@@ -28,10 +28,9 @@
       </section>
       <section id="section2" data-nav="About" class="section">
         <div class="landing__container">
-          <h2>About</h2>
-          <h2 class="about__text"><span id="about_page_text">Me</span></h2>
+          <h2>About <span id="about_page_text">Me</span></h2>
         </div>
-        <div>
+        <div class="bio">
           <h3>
             I enjoy software development because it allows me to transcribe
             design to code.
@@ -53,37 +52,12 @@
           <div class="projects__items">
             <div class="projects__item">
               <img src="./images/carlos-muza-hpjSkU2UYSU.jpg" alt="" />
-              <div class="projects__btns">
-                <a href="#" class="projects_btn">
-                  <i class="fas fa-eye"></i>Preview
-                </a>
-                <a href="#" class="projects_btn">
-                  <i class="fab fa-github"></i>Github
-                </a>
-              </div>
             </div>
             <div class="projects__item">
               <img src="./images/ilya-pavlov-OqtafYT5kTw.jpg" alt="" />
-              <div class="projects__btns">
-                <a href="#" class="projects_btn">
-                  <i class="fas fa-eye">Preview</i>
-                </a>
-                <a href="#" class="projects_btn">
-                  <i class="fab fa-github">Github</i>
-                </a>
-              </div>
             </div>
             <div class="projects__item">
               <img src="./images/le-buzz-9H0ZA1oPsYE.jpg" alt="" />
-              <div class="projects__btns">
-                <a href="#" class="projects_btn">
-                  <i class="fas fa-eye">Preview</i>
-                </a>
-                <a href="#" class="projects_btn">
-                  <i class="fab fa-github">Github</i>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>

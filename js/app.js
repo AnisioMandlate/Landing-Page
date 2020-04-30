@@ -12,6 +12,7 @@ function createNavBar() {
     theUl.appendChild(list);
   });
 }
+
 /**Change navigation style on scroll*/
 window.addEventListener("scroll", (event) => {
   let nav = document.querySelector(".navbar__menu");

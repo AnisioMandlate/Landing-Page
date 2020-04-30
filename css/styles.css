@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
 @import "social-media.css";
+@import "media-queries.css";
 
 *,
 *::after,
@@ -146,7 +147,6 @@ p {
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid black;
   overflow: hidden;
   cursor: pointer;
 }
@@ -162,7 +162,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  background: mediumseagreen;
+  background: rgba(51, 51, 51, 0.315);
   opacity: 0;
   transition: ease 0.5s all;
 }
@@ -170,31 +170,6 @@ p {
 .projects__item:hover::after {
   top: 0;
   opacity: 0.9;
-}
-
-.projects__item.projects_btn {
-  opacity: 1;
-}
-
-.projects__item.projects__btns {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  text-align: center;
-}
-
-.projects_btn {
-  opacity: 0;
-  color: #898989;
-}
-
-.projects_btn:hover {
-  color: black;
 }
 
 i {
